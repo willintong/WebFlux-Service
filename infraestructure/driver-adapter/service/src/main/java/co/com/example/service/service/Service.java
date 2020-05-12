@@ -24,7 +24,7 @@ public class Service implements IBookDao {
     }
 
     @Override
-    public Mono<Book> findById(long id) {
+    public Mono<Book> findById(Integer id) {
         return webClient.get()
                 .uri("/{id}", id)
                 .retrieve()

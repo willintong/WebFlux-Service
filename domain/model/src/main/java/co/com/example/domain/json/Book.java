@@ -10,8 +10,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Book {
-    private int userId;
-    private long id;
+    private Integer userId;
+    private Integer id;
     private String title;
     private String body;
 

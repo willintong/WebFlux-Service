@@ -7,5 +7,5 @@ import reactor.core.publisher.Mono;
 public interface IBookDao {
 
     Flux<Book> findAll();
-    Mono<Book> findById(long id);
+    Mono<Book> findById(Integer id);
 }

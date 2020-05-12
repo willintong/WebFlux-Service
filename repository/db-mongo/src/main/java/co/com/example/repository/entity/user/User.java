@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
 
     @Id
-    private long id;
+    private int id;
 
     private int userId;
 
@@ -21,7 +21,7 @@ public class User {
 
     private String body;
 
-    public User(long id, int userId, String title, String body) {
+    public User(int id, int userId, String title, String body) {
         this.id = id;
         this.userId = userId;
         this.title = title;

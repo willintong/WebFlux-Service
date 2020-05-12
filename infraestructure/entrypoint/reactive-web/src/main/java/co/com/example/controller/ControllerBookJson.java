@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/posts")
-public class BookJson {
+public class ControllerBookJson {
 
     @Autowired
     private IBookDao bookDao;
@@ -24,7 +24,7 @@ public class BookJson {
     }
 
     @GetMapping("/{id}")
-    public Mono<Book> findById(@PathVariable long id){
+    public Mono<Book> findById(@PathVariable Integer id){
         return bookDao.findById(id);
     }
 
